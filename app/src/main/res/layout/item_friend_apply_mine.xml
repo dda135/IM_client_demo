@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:paddingBottom="8dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="12dp"
+              android:paddingTop="8dp"
+              android:gravity="center_vertical"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_avator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:placeholderImage="@drawable/ic_launcher"
+        app:actualImageResource="@drawable/logo"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="6dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="向xxx发送好友申请"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="已同意"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/dark_gray"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

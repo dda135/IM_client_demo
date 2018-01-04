@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Messenger</string>
+    <string name="mobile_number">手机号</string>
+    <string name="password">密码</string>
+    <string name="conversation">会话</string>
+    <string name="friend">好友</string>
+    <string name="mine">我的</string>
+    <string name="search">查找</string>
+    <string name="friend_apply_hint">向%1$s提交申请成为好友</string>
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="reject">拒绝</string>
+    <string name="agree">同意</string>
+    <string name="friend_apply_list">好友申请列表</string>
+    <string name="not_fill">未填写</string>
+    <string name="select_image">选择图片</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="select_sex">选择性别</string>
+    <string name="address">地址</string>
+    <string name="update_data">修改资料</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="friend_apply_agree">已同意%1$s的好友申请</string>
+    <string name="friend_apply_reject">已拒绝%1$s的好友申请</string>
+</resources>

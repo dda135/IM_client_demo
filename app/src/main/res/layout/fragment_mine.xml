@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/view_title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_avator"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:actualImageResource="@drawable/logo"
+            app:actualImageScaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="小明"
+            android:layout_toRightOf="@+id/iv_avator"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="23岁"
+            android:layout_toRightOf="@+id/tv_nickname"
+            android:layout_alignBottom="@+id/tv_nickname"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="男"
+            android:layout_toRightOf="@+id/tv_birth"
+            android:layout_alignBottom="@+id/tv_birth"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="xxxxxxxxxxxxxxxxx"
+            android:layout_toRightOf="@+id/iv_avator"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tv_nickname"
+            android:src="@drawable/ic_edit"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

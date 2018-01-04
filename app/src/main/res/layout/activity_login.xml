@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/fl_parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_color"
+    android:paddingBottom="48dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Messenger"
+            android:textColor="@color/white"
+            android:typeface="serif"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_mobile"/>
+
+
+            <EditText
+                android:id="@+id/et_telephone"
+                android:theme="@style/MyEditText"
+                style="@style/LoginEditStyle"
+                android:inputType="number"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:hint="@string/mobile_number"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_password"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:theme="@style/MyEditText"
+                style="@style/LoginEditStyle"
+                android:maxLength="16"
+                android:maxLines="2"
+                android:hint="@string/password"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="268dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/LoginButtonStyle"
+                android:text="注册"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/LoginButtonStyle"
+                android:text="登录"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

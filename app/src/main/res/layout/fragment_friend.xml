@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:orientation="horizontal"
+        android:background="@color/common_color"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/friend"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_search"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:placeholderImage="@drawable/ic_search"
+            android:layout_marginRight="12dp"
+            />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_apply"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:placeholderImage="@drawable/ic_apply"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_red_dot"
+                style="@style/RedDot"
+                android:layout_gravity="top|right"
+                android:visibility="gone"
+                android:text="0"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_friend"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

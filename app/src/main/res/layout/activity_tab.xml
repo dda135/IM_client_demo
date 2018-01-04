@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:id="@+id/tab_conversation"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/tab_iv_conversation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selector_tab_conversation"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conversation"
+                android:textColor="@color/selector_tab_text"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:typeface="serif"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_friend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/tab_iv_friend"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selector_tab_friend"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend"
+                android:textColor="@color/selector_tab_text"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:typeface="serif"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/tab_iv_mine"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/selector_tab_mine"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine"
+                android:textColor="@color/selector_tab_text"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"
+                android:typeface="serif"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

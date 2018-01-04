@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/title_bar_height"
+              android:background="@color/common_color"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_back"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:placeholderImage="@drawable/ic_back"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:includeFontPadding="false"
+        tools:text="小明"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/iv_right"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
